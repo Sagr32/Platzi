@@ -24,7 +24,8 @@ fun LoginRoute(
 fun rememberLoginActions(coordinator: LoginCoordinator): LoginActions {
     return remember(coordinator) {
         LoginActions(
-            onClick = coordinator::doStuff
+            onClick = coordinator::doStuff,
+            login = coordinator::login
         )
     }
 }

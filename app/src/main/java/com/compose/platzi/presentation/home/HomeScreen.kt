@@ -91,8 +91,7 @@ fun HomeScreen(
                     fontWeight = FontWeight(700),
                     color = Color(0xFF222222),
                 ), modifier = Modifier.clickable {
-                    actions.onProductClicked
-//                    Log.e("TAG", "HomeScreen:New is clicked ")
+                    actions.onProductClicked()
                 }
             )
         }

@@ -26,10 +26,7 @@ fun rememberHomeActions(coordinator: HomeCoordinator): HomeActions {
     return remember(coordinator) {
         HomeActions(
             onClick = coordinator::doStuff,
-            onProductClicked = {
-                Log.e("TAG", "rememberHomeActions: Actions")
-                coordinator.onProductClicked()
-            }
+            onProductClicked = coordinator::onProductClicked
         )
     }
 }

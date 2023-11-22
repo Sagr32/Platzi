@@ -2,7 +2,6 @@ package com.compose.platzi.data.model
 
 
 
-
 data class Product(
     val category: Category,
     val creationAt: String,
